@@ -7,7 +7,8 @@ $(document).ready(function() {
   $("#button").click(function() {
     GiphyService.gifSearch()
       .then(function(response) {
-        console.log(response.data[0].url)
-      })
+        let url = response.data[0].images.fixed_height_small.url;
+        $("#text").html(`<img src="${url}">`);
+      });
   });
 });
