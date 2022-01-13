@@ -8,8 +8,10 @@ $(document).ready(function() {
   $("#button").click(function() {
     GiphyService.gifSearch()
       .then(function(response) {
-        let url = response.data[0].images.fixed_height_small.url;
-        $("#text").html(`<img src="${url}">`);
+        for (let i = 0; i < 10; i++) {
+          let url = response.data[i].images.fixed_height_small.url;
+          $("#img-wrapper").append(`<img src="${url}">`);
+        }
       });
   });
 });

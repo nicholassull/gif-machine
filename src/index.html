@@ -7,7 +7,7 @@
   <title>GIF Machine</title>
 </head>
 <body>
-  <div class="container">
+  <div id="main-container" class="container">
     <header>
       <div id="banner">
         <h1>GIF Machine</h1>
@@ -24,7 +24,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Trending</a>
-            </li>
+            </li> 
             <li class="nav-item">
               <a class="nav-link" href="#">Random</a>
             </li>
@@ -34,12 +34,21 @@
       </nav>
     </header>
     <main>
-    
-      <button id="button">Click Me</button>
-      <span id="text"></span>
-    
-      <div id="img">
-
+      <div id="search-wrapper">
+        <button class="btn btn-primary" id="button">Click Me</button>
+      </div>
+      <div class="row">
+        <div class="col-6" id="left-side">
+          <div id="img-wrapper">
+  
+          </div>
+        </div>
+      
+        <span id="text"></span>
+      
+        <div id="img">
+  
+        </div>
       </div>
     </main>
     <footer>
