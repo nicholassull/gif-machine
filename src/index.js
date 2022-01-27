@@ -10,7 +10,7 @@ $(document).ready(function() {
       .then(function(response) {
         for (let i = 0; i < 10; i++) {
           let url = response.data[i].images.fixed_height_small.url;
-          $("#img-wrapper").append(`<img src="${url}">`);
+          $("#img-wrapper").append(`<img class="gif-thumbnail" src="${url}">`);
         }
       });
   });

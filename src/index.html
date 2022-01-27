@@ -34,20 +34,31 @@
       </nav>
     </header>
     <main>
-      <div id="search-wrapper">
-        <button class="btn btn-primary" id="button">Click Me</button>
-      </div>
-      <div class="row">
-        <div class="col-6" id="left-side">
-          <div id="img-wrapper">
-  
+      <div id="search-wrapper" class="">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" id="search-input" class="form-control" placeholder="Search...">
+            </div>
+            <div class="col">
+              <button class="btn btn-primary" id="button">Click Me</button>
+            </div>
           </div>
-        </div>
-      
-        <span id="text"></span>
-      
-        <div id="img">
+        </form>
+      </div>
+      <div id="search-content-wrapper">
+        <div class="row">
+          <div class="col-7" id="left-side">
+            <div id="img-wrapper" class="row justify-content-center">
   
+            </div>
+          </div>
+        
+          <span id="text"></span>
+        
+          <div id="img">
+    
+          </div>
         </div>
       </div>
     </main>

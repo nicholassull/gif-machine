@@ -12,9 +12,23 @@
 
 }
 
+#search-wrapper {
+  float: right;
+  margin: 2% 1%;
+}
+
+#search-content-wrapper{
+  clear: both;
+}
+
 .img-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+
+.gif-thumbnail {
+  max-width: 120px;
+
 }
 
 img {
