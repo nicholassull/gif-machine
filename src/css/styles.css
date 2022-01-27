@@ -16,7 +16,11 @@
   float: right;
   margin: 2% 1%;
 }
-
+/* Landing page styling */
+#landing-wrapper {
+  text-align: center;
+}
+/* Search content styling */
 #search-content-wrapper{
   clear: both;
 }
@@ -32,5 +36,5 @@
 }
 
 img {
-  margin: 10px;
+  margin: 8px;
 }
