@@ -2,9 +2,9 @@
   min-width: 800px
 }
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 #banner {
   background-color: azure;
   display: flex;
