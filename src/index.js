@@ -6,7 +6,9 @@ import GiphyService from './js/giphy-search';
 
 $(document).ready(function() {
   $("#button").click(function() {
-    GiphyService.gifSearch()
+    event.preventDefault();
+    let searchTerm = $('#search-input').val();
+    GiphyService.gifSearch(searchTerm)
       .then(function(response) {
         for (let i = 0; i < 10; i++) {
           let url = response.data[i].images.fixed_height_small.url;

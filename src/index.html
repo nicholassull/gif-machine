@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Search</a>
+              <a class="nav-link" id="search-button" href="#">Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trending</a>
+              <a class="nav-link" id="trending-button" href="#">Trending</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#">Random</a>
+              <a class="nav-link" id="random-button" href="#">Random</a>
             </li>
 
           </ul>
@@ -34,30 +34,32 @@
       </nav>
     </header>
     <main>
-      <div id="search-wrapper" class="">
-        <form id="search-form">
+      <div id="search-wrapper" class="hidden">
+        <div id="search-form-wrapper" class="">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" id="search-input" class="form-control" placeholder="Search...">
+              </div>
+              <div class="col">
+                <button class="btn btn-primary" id="button">Click Me</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="search-result-wrapper">
           <div class="row">
-            <div class="col-6">
-              <input type="text" id="search-input" class="form-control" placeholder="Search...">
-            </div>
-            <div class="col">
-              <button class="btn btn-primary" id="button">Click Me</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div id="search-content-wrapper">
-        <div class="row">
-          <div class="col-7" id="left-side">
-            <div id="img-wrapper" class="row justify-content-center">
-  
-            </div>
-          </div>
-        
-          <span id="text"></span>
-        
-          <div id="img">
+            <div class="col-7" id="left-side">
+              <div id="img-wrapper" class="row justify-content-center">
     
+              </div>
+            </div>
+          
+            <span id="text"></span>
+          
+            <div id="img">
+      
+            </div>
           </div>
         </div>
       </div>
