@@ -10,14 +10,14 @@ function displaySearchResults(searchTerm) {
       .then(function(response) {
         for (let i = 0; i < 15; i++) {
           let url = response.data[i].images.fixed_height_small.url;
-          $("#img-wrapper").append(`<img id="image${i}" class="gif-thumbnail" src="${url}">`);
+          $("#search-img-wrapper").append(`<img id="image${i}" class="gif-thumbnail" src="${url}">`);
         }
       });
 }
 
 function attachImageListeners() {
-  $('div#img-wrapper').on('click', "img", function() {
-    console.log('The id of this <img> is ' + this.id + ".");
+  $('div#search-img-wrapper').on('click', "img", function() {
+    console.log('The id of this <img> is ' + this.class + ".");
   });
 }
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
   $("#search-button").click(function() {
     event.preventDefault();
     let searchTerm = $('#search-input').val();
-    $('#img-wrapper').empty();
+    $('#search-img-wrapper').empty();
     displaySearchResults(searchTerm);
   });
 });
