@@ -17,7 +17,7 @@ function displaySearchResults(searchTerm) {
 
 function attachImageListeners() {
   $('div#search-img-wrapper').on('click', "img", function() {
-    console.log('The id of this <img> is ' + this.class + ".");
+    console.log('The id of this <img> is ' + this.id + ".");
   });
 }
 
