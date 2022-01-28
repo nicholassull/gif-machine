@@ -26,7 +26,7 @@
 }
 /* Search page styling */
 #search-wrapper {
-  height: 550px;
+  height: 600px;
 }
 
 #search-form-wrapper {
@@ -55,7 +55,18 @@ img {
   margin: 8px;
 }
 
+#search-result-wrapper, h3 {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Supermercado One', cursive;
+}
+
+#search-selection-wrapper {
+  
+}
+
 /* Footer styling */
 footer {
   text-align: center;
+  margin-top: 30px;
 }
