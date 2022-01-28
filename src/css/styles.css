@@ -26,7 +26,7 @@
 }
 /* Search page styling */
 #search-wrapper {
-  height: 600px;
+  
 }
 
 #search-form-wrapper {
@@ -35,6 +35,7 @@
 }
 #search-result-wrapper{
   clear: both;
+  height: 600px;
 }
 
 .search-img-wrapper {
@@ -62,7 +63,8 @@ img {
 }
 
 #search-selection-wrapper {
-  
+  background-color: cadetblue;
+  height: inherit;
 }
 
 /* Footer styling */
