@@ -15,7 +15,14 @@ function displaySearchResults(searchTerm) {
       });
 }
 
+function attachImageListeners() {
+  $('div#img-wrapper').on('click', "img", function() {
+    console.log('The id of this <img> is ' + this.id + ".");
+  });
+}
+
 $(document).ready(function() {
+  attachImageListeners()
   $('#landing-search-button').click(function() {
     $('#landing-wrapper').toggle();
     $('#search-wrapper').fadeIn();
